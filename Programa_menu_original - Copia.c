@@ -1,97 +1,104 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float circulo(float dia)  //função que calcula a área do círculo 
-      {float r, area, PI;
-      PI=3.14159265;
+#define PI 3.14159265          // Constante para PI
+
+
+
+
+
+
+
+float circulo(float dia)  //funï¿½ï¿½o que calcula a ï¿½rea do cï¿½rculo 
+      {float r, area;
       r = dia/2;
       area = PI*r*r;
       return(area);}
 
-float losango(float D1,float D2) //função que calcula a area do losango
+float losango(float D1,float D2) //funï¿½ï¿½o que calcula a area do losango
       {float area;
       area=(D1*D2)/2;
       return(area);}
 
-float paralelogramo(float alt, float base)    // função que calcula a area do paralelogramo
+float paralelogramo(float alt, float base)    // funï¿½ï¿½o que calcula a area do paralelogramo
       {float area;
       area=base*alt;
       return(area);}
      
-float trapezio(float B_maior, float b_menor,float alt)  //função que calcula a area do trapézio
+float trapezio(float B_maior, float b_menor,float alt)  //funï¿½ï¿½o que calcula a area do trapï¿½zio
       {float area;
       area=((B_maior+b_menor)/2)*alt;
       return(area);}
 
-float tri_equi(float A, float B, float C)           //função que calcula a area do triangulo equilatero
+float tri_equi(float A, float B, float C)           //funï¿½ï¿½o que calcula a area do triangulo equilatero
       {float area;
       area= ((A*A)/4)*1.732050808;
       return (area);}
        
-float tri(float A, float B, float C)          //função que calcula a area do triangulo
+float tri(float A, float B, float C)          //funï¿½ï¿½o que calcula a area do triangulo
       {float area;
       area=(B*A)/2;
       return(area);}
 
-float esf(float dia)                     //função que calcula o volume da esfera
+float esf(float dia)                     //funï¿½ï¿½o que calcula o volume da esfera
       {float r, vol;
       r=dia/2;
       vol=((4*3.14159265)/3)*r*r*r;
       return (vol);}
       
-float cone(float dia, float alt)           //função que calcula o volume do cone
+float cone(float dia, float alt)           //funï¿½ï¿½o que calcula o volume do cone
       {float r, vol;
       r=dia/2;
       vol=(3.14159265/3)*r*r*alt;
       return(vol);}
       
-float cilindro(float dia, float alt)       //função que calcula o volume do cilindro
+float cilindro(float dia, float alt)       //funï¿½ï¿½o que calcula o volume do cilindro
       {float r, vol;
       r=dia/2;
       vol=3.14159265*r*r*alt;
       return(vol);}
 
-float paral(float comp, float larg, float alt)          //função que calcula o volume do paralelepípedo
+float paral(float comp, float larg, float alt)          //funï¿½ï¿½o que calcula o volume do paralelepï¿½pedo
       {float vol;
       vol=comp*larg*alt;
       return(vol);}
 
-float m_j(float num)                    //função que converte metros para jardas
+float m_j(float num)                    //funï¿½ï¿½o que converte metros para jardas
       {float total;
       total= num*1.09361;
       return (total);}
                    
-float j_m(float num)                    //função que converte jardas para metros
+float j_m(float num)                    //funï¿½ï¿½o que converte jardas para metros
       {float total;
       total= num/1.09361;
       return(total);}
 
-float cmcub_polcub(float num)         //função que converte cent. cub. para pol cub
+float cmcub_polcub(float num)         //funï¿½ï¿½o que converte cent. cub. para pol cub
       {float total;
       total=num/16.387064;  
       return(total);}
 
-float polcub_cmcub(float num)        //função que converte pol cub. para cent. cub
+float polcub_cmcub(float num)        //funï¿½ï¿½o que converte pol cub. para cent. cub
       {float total;
       total= num*16.387064; 
       return(total);}
 
-float l_gl(float num)              //função que converte litros em galoes
+float l_gl(float num)              //funï¿½ï¿½o que converte litros em galoes
       {float total;
       total= num*0.2642;
       return(total);}
 
-float gl_l(float num)              //função que converte galoes em litros
+float gl_l(float num)              //funï¿½ï¿½o que converte galoes em litros
       {float total;
       total= num/0.2642;
       return(total);}
 
-float kg_lib(float num)           //função que converte quilos em libras
+float kg_lib(float num)           //funï¿½ï¿½o que converte quilos em libras
       {float total;
       total= num*2.20462262;
       return(total);}
 
-float lib_kg(float num)         //função que converte libras em quilos
+float lib_kg(float num)         //funï¿½ï¿½o que converte libras em quilos
       {float total;
       total= num/2.20462262;
       return(total);}     
@@ -139,8 +146,8 @@ main()
       fflush(stdin);          
       system("cls");
       
-      float dia, area, d1, d2, base, alt;          //declaração das 
-      float A, B, C;                                 // variáveis que serão usadas no switch
+      float dia, area, d1, d2, base, alt;          //declaraï¿½ï¿½o das 
+      float A, B, C;                                 // variï¿½veis que serï¿½o usadas no switch
       
       switch(opcao)    //segunda escolha    
       {
@@ -237,7 +244,7 @@ main()
            
       system("cls"); 
       }              //fecha o segundo looping
-      while (opcao!=0);            //condição para voltar para o submenu 1
+      while (opcao!=0);            //condiï¿½ï¿½o para voltar para o submenu 1
       break;           //vai direto para o fim do primeiro switch sem testar os demais case      
               
               case 2:
@@ -323,7 +330,7 @@ main()
              system("cls");
              
               }
-           while(opcao!=0);        //condição para voltar para o submenu 2
+           while(opcao!=0);        //condiï¿½ï¿½o para voltar para o submenu 2
            break;   
         
            case 3:
