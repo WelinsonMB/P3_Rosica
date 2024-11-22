@@ -83,11 +83,10 @@ float conversao(int tipo, float num)
 int main()
 {
       int opcao, tipo;
-      float w1, w2, w3, resultado;
+      float w1, w2, w3, resultado, num;
 
       do
       {
-            system("cls");
             // Menu principal
             printf("********************************************************************************\n");
             printf("********** MENU PRINCIPAL **********\n");
@@ -97,9 +96,8 @@ int main()
             printf("4 - Sair\n");
             printf("Escolha a opcao: ");
             scanf("%d", &opcao);
-
-            fflush(stdin);
-            system("cls");
+            getchar();
+            
             // submenu
             switch (opcao)
             {
@@ -116,7 +114,7 @@ int main()
                   printf("6 - Triangulo comum\n");
                   printf("0 - Retornar\n");
                   scanf("%d", &tipo);
-                  system("cls");
+                  printf("\n");
 
                   if (tipo == 1) // Caso selecione Circulo
                   {
@@ -173,7 +171,7 @@ int main()
                   printf("4 - Paralelepipedo\n");
                   printf("0 - Retornar\n");
                   scanf("%d", &tipo);
-                  system("cls");
+                  
 
                   if (tipo == 1)
                   {
@@ -217,8 +215,8 @@ int main()
                   printf("Escolha a opção: ");
                   scanf("%d", &tipo);
                   printf("Digite o valor a ser convertido: ");
-                  scanf("%f", &w1);
-                  resultado = conversao(tipo, w1);
+                  scanf("%f", &num);
+                  resultado = conversao(tipo, num);
                   printf("O resultado da conversão é: %f\n", resultado);
 
                   break;
@@ -230,7 +228,7 @@ int main()
             default:
                   printf("Opção inválida!\n");
             }
-            system("cls");
+            
             printf("Pressione <ENTER> para continuar...\n");
             getchar(); // Captura a tecla ENTER
             getchar(); // Aguarda a confirmação

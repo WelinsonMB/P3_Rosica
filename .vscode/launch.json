@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/welinson.brito/Desktop/GTI/Projetos/P3_Rosica",
-      "program": "c:/Users/welinson.brito/Desktop/GTI/Projetos/P3_Rosica/build/Debug/outDebug",
+      "cwd": "c:/Users/welinson.brito/Desktop/GTI/Projetos/teste",
+      "program": "c:/Users/welinson.brito/Desktop/GTI/Projetos/teste/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
