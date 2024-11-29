@@ -196,7 +196,7 @@ int main()
                 resultado = volume_solido(tipo, w1, w2, w3);
             }
 
-            printf("O volume e: %f\n", resultado);
+            printf("O volume e: %.2f\n", resultado);
             break;
 
         case 3:
